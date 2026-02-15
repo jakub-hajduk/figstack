@@ -11,6 +11,9 @@ importers:
       citty:
         specifier: ^0.2.1
         version: 0.2.1
+      figwire:
+        specifier: ^0.0.3
+        version: 0.0.3
       jiti:
         specifier: ^2.6.0
         version: 2.6.1
@@ -688,6 +691,9 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  figwire@0.0.3:
+    resolution: {integrity: sha512-nUOcfGFUPbyzp9oQsd3IL7bNSGJbFlM73YBdw4RuytgaNQcpvvTzVRX+Nk7HWFJI8LfaQH0ATzP/Tz9AKQfduw==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -1597,6 +1603,8 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
+
+  figwire@0.0.3: {}
 
   fill-range@7.1.1:
     dependencies:
