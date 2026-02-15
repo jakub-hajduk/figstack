@@ -1,6 +1,6 @@
 {
   "name": "figstack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "description": "Figstack is a framework-agnostic, Vite-powered build tool for Figma plugins development. It abstracts postMessage plumbing so you can import and call code-side logic like standard UI functions.",
   "bin": {
@@ -34,7 +34,9 @@
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
