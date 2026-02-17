@@ -1,8 +1,8 @@
 import { parseModule } from 'magicast';
 import type { Plugin } from 'vite';
-import type { FigstackContext } from '../build';
+import type { FigmaPluginBundleContext } from '../build';
 
-export function figwireTransformCode(context: FigstackContext): Plugin {
+export function figwireTransformCode(context: FigmaPluginBundleContext): Plugin {
   const finalOptions = context.options;
 
   const VIRTUAL_PLUGIN_SIDE_NAME = 'virtual:figwire-transform-code';

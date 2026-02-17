@@ -1,5 +1,5 @@
-import type { FigstackOptions } from './build';
+import type { FigmaPluginBundleOptions } from './build';
 
-export function defineConfig(config?: Partial<FigstackOptions>) {
+export function defineConfig(config?: Partial<FigmaPluginBundleOptions>) {
   return config;
 }

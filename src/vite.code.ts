@@ -1,12 +1,12 @@
 import { resolve } from 'node:path';
 import { build, defineConfig } from 'vite';
 import { viteSingleFile } from 'vite-plugin-singlefile';
-import type { FigstackContext, FigstackOptions } from './build';
+import type { FigmaPluginBundleContext, FigmaPluginBundleOptions } from './build';
 import { figwireTransformCode } from './plugin/figwire-transform-code.plugin';
 
-export async function buildCode(context: FigstackContext) {
+export async function buildCode(context: FigmaPluginBundleContext) {
   const isProd = process.env.NODE_ENV === 'production';
-  const finalOptions: FigstackOptions = context.options;
+  const finalOptions: FigmaPluginBundleOptions = context.options;
 
   const config = defineConfig({
     plugins: [

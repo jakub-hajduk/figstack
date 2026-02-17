@@ -1,9 +1,9 @@
 {
-  "name": "figstack",
+  "name": "figma-plugin-bundle",
   "private": false,
   "version": "0.0.2",
   "type": "module",
-  "description": "Figstack is a framework-agnostic, Vite-powered build tool for Figma plugins development. It abstracts postMessage plumbing so you can import and call code-side logic like standard UI functions.",
+  "description": "Figma Plugin Bundle is a framework-agnostic, Vite-powered build tool for Figma plugins development. It abstracts postMessage plumbing so you can import and call code-side logic like standard UI functions.",
   "bin": {
     "figstack": "./dist/cli.mjs"
   },

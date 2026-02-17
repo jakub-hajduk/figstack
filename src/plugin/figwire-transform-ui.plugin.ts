@@ -1,9 +1,9 @@
 import { dirname, resolve } from 'node:path';
 import { parseModule } from 'magicast';
 import type { Plugin } from 'vite';
-import type { FigstackContext } from '../build';
+import type { FigmaPluginBundleContext } from '../build';
 
-export function figwireTransformUi(context: FigstackContext): Plugin {
+export function figwireTransformUi(context: FigmaPluginBundleContext): Plugin {
   const finalOptions = context.options;
 
   const VIRTUAL_UI_SIDE_NAME = 'virtual:figwire-transform-ui';

@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineCommand, runMain } from 'citty';
 import { createJiti } from 'jiti';
-import { type FigstackOptions, build } from './build';
+import { type FigmaPluginBundleOptions, build } from './build';
 
 const main = defineCommand({
   meta: {
@@ -28,7 +28,7 @@ const main = defineCommand({
       .find((fileName) => existsSync(fileName));
 
     if (configFile) {
-      options = await jiti.import<FigstackOptions>(configFile, {
+      options = await jiti.import<FigmaPluginBundleOptions>(configFile, {
         default: true,
       });
     }

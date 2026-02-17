@@ -9,7 +9,7 @@ const defaultCodeFiles = (fileName: string) => fileName.endsWith('.code.ts');
 
 export type CodeFilesFn = (fileName: string) => boolean;
 
-export interface FigstackOptions {
+export interface FigmaPluginBundleOptions {
   codeFiles: CodeFilesFn;
   outDir: string;
   watch: boolean;
@@ -25,13 +25,13 @@ export interface FigstackOptions {
   };
 }
 
-export interface FigstackContext {
-  options: FigstackOptions;
+export interface FigmaPluginBundleContext {
+  options: FigmaPluginBundleOptions;
   codeFiles: CodeFilesCollection;
 }
 
-export async function build(options: Partial<FigstackOptions>) {
-  const finalOptions: FigstackOptions = {
+export async function build(options: Partial<FigmaPluginBundleOptions>) {
+  const finalOptions: FigmaPluginBundleOptions = {
     watch: false,
     outDir: resolve(process.cwd(), 'dist'),
     codeFiles: defaultCodeFiles,
