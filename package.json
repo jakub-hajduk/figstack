@@ -1,7 +1,7 @@
 {
   "name": "figma-plugin-bundle",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Figma Plugin Bundle is a framework-agnostic, Vite-powered build tool for Figma plugins development. It abstracts postMessage plumbing so you can import and call code-side logic like standard UI functions.",
   "bin": {
@@ -43,7 +43,9 @@
     "figwire": "^0.0.3",
     "vite": "^7.3.1"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
