@@ -8,8 +8,8 @@ import { type FigmaPluginBundleOptions, build } from './build';
 
 const main = defineCommand({
   meta: {
-    name: 'figstack',
-    description: 'Vite-poweredt tool for Figma Plugin development',
+    name: 'fpb',
+    description: 'Vite-powered tool for Figma Plugin development',
   },
   args: {
     build: {
@@ -20,7 +20,7 @@ const main = defineCommand({
   },
   async run({ args }) {
     const jiti = createJiti(import.meta.url, { debug: true });
-    const configFileName = 'figstack.config';
+    const configFileName = 'figma-plugin-bundle.config';
     const watch = !args.build;
     let options = {};
     const configFile = ['ts', 'js']

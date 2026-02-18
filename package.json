@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Figma Plugin Bundle is a framework-agnostic, Vite-powered build tool for Figma plugins development. It abstracts postMessage plumbing so you can import and call code-side logic like standard UI functions.",
   "bin": {
-    "figstack": "./dist/cli.mjs"
+    "fpb": "./dist/cli.mjs"
   },
   "scripts": {
     "dev": "tsdown --watch",
