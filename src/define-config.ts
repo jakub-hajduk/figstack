@@ -9,5 +9,5 @@ export type RecursivePartial<Type> = {
 };
 
 export function defineConfig(config?: RecursivePartial<FigmaPluginBundleOptions>) {
-  return config;
+  return config as FigmaPluginBundleOptions;
 }

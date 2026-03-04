@@ -1,9 +1,11 @@
-import type { PluginOption } from 'vite'
+import type { PluginOption, Plugin } from 'vite'
 import type { CodeFilesCollection } from './code-files.collection'
 
 export type CodeFilesFn = (fileName: string) => boolean;
 
-export type VitePluginOption = PluginOption
+export type Thenable<T> = T | Promise<T>;
+
+export type VitePluginOption = Thenable<PluginOption | PluginOption[] | Plugin | Plugin[]>
 
 export interface FigmaPluginBundleOptions {
   codeFiles: CodeFilesFn;

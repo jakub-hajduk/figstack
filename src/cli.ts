@@ -20,7 +20,7 @@ const main = defineCommand({
     },
   },
   async run({ args }) {
-    const jiti = createJiti(import.meta.url, { debug: true });
+    const jiti = createJiti(import.meta.url);
     const configFileName = 'figma-plugin-bundle.config';
     const watch = !args.build;
     let options = {};
